@@ -352,16 +352,19 @@
         // Show or hide the sticky footer button
 		$("#result-correct" ).fadeOut();
 		$("#result-incorrect" ).fadeOut();
-		
+		$("#result-graph" ).fadeOut();
         $('#checker').on('click', function() {
             var correct = ($('#in-fn').val() ==='m' || $('#in-fn').val() ==='M') && ($('#in-ln').val() ==='s' || $('#in-ln').val() ==='S');
 			if(correct){
 				$("#result-incorrect" ).fadeOut();
 				$("#result-correct" ).fadeIn("slow");
+				$("#result-graph" ).fadeIn("slow");
+				
 			}
 			else{
 				$("#result-correct" ).fadeOut();
-				$("#result-incorrect" ).fadeIn("slow");			
+				$("#result-incorrect" ).fadeIn("slow");		
+				$("#result-graph" ).fadeIn("slow");
 			}
         });
     };
