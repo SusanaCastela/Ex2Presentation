@@ -3441,3 +3441,9 @@ html.no-csstransitions .home-content__main {
 p{
 	font-size: 27px;
 }
+
+.result-bckg{
+	opacity: 0.2;
+    left: 0% !important;
+    top: -20%;
+}
